@@ -1,0 +1,15 @@
+[{
+  "relation": [
+    "delegate_permission/common.handle_all_urls",
+    "delegate_permission/common.get_login_creds"
+  ],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "sh.sit.bonfire",
+    "sha256_cert_fingerprints": [
+      "7E:E1:C3:90:62:CD:F1:22:6A:69:E0:4E:BD:E1:C0:11:26:79:85:AD:2C:32:88:39:04:A8:B4:95:3E:90:F5:CD",
+      "B4:FB:56:20:27:97:69:AC:84:AE:9F:E7:F9:CB:EE:47:B5:C1:A8:FC:6A:37:75:F5:79:8B:D1:D1:41:75:5F:01",
+      "BA:51:65:65:72:4A:B9:BA:17:04:31:C0:44:BB:C8:BD:D7:25:DF:75:84:C8:D5:13:DE:99:FF:74:7A:9A:67:EE"
+    ]
+  }
+}]
