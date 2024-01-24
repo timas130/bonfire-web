@@ -6,6 +6,7 @@
   import {enhance} from "$app/forms";
   import Input from "$lib/components/input/Input.svelte";
   import Button from "$lib/components/button/Button.svelte";
+  import SvelteSeo from "svelte-seo";
 
   /** @type {import("./$types").PageData} */
   export let data;
@@ -18,6 +19,8 @@
 
   let loading = false;
 </script>
+
+<SvelteSeo title="Восстановление пароля | Bonfire" />
 
 <CenteredPage>
   <AuthBlock>
