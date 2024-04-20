@@ -17,7 +17,7 @@
       Откройте для себя мир общения, идей и вдохновения. Загрузите Bonfire сейчас!
     </p>
     <div class="flex flex-wrap gap-2">
-      <Button el="a" href="/download" size="big" variant="hero">
+      <Button el="a" href="https://play.google.com/store/apps/details?id=sh.sit.bonfire" size="big" variant="hero">
         Google Play
       </Button>
       <Button el="a" href="/bonfire2.apk" size="big">
