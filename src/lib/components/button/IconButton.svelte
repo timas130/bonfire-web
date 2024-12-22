@@ -9,6 +9,6 @@
   export {className as class};
 </script>
 
-<BaseButton class="{buttonSizes[size].icon} {className}" {size} {...$$restProps}>
+<BaseButton class="{buttonSizes[size].icon} {className}" {size} {...$$restProps} on:click>
   <slot />
 </BaseButton>

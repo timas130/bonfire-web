@@ -9,7 +9,7 @@
   export {className as class};
 </script>
 
-<BaseButton class="{buttonSizes[size].normal} {className}" {size} {...$$restProps}>
+<BaseButton class="{buttonSizes[size].normal} {className}" {size} {...$$restProps} on:click>
   {#if $$slots.icon}
     <div class="pr-2">
       <slot name="icon" />

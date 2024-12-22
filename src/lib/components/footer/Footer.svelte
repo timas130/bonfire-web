@@ -10,7 +10,7 @@
     <FooterLink href="/page/copyright">Для правообладателей</FooterLink>
     <FooterLink href="/help">Помощь и поддержка</FooterLink>
   </div>
-  <div class="text-center text-text-900/60 pb-6">
+  <div class="text-center text-text/60 pb-6">
     &copy; {new Date().getFullYear()} Bonfire Studio
   </div>
 </Container>

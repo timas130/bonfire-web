@@ -110,7 +110,7 @@
   }
 
   .field {
-    background-color: rgb(var(--background-200));
+    background-color: #303030;
     display: flex;
     align-items: center;
     padding: 0.2rem 0.5rem;
@@ -118,12 +118,12 @@
     width: 100%;
     cursor: text;
     transition: outline-width 200ms ease;
-    outline: rgb(var(--text-800)) solid 0;
+    outline: #eeeeee solid 0;
     height: 3.2rem;
   }
   .field.outlined {
     background-color: transparent;
-    border: 0.1rem solid rgb(var(--background-200));
+    border: 0.1rem solid #444444;
     outline: none;
     transition: border 200ms ease;
     height: 3rem;
@@ -132,10 +132,10 @@
     outline-width: 0.1rem;
   }
   .outlined.focused {
-    border-color: rgb(var(--text-900));
+    border-color: #eeeeee;
   }
   .disabled {
-    background-color: rgb(var(--background-200));
+    background-color: #212121;
   }
 
   .field.textarea {
@@ -150,13 +150,13 @@
   }
   .outlined .field-icon {
     transition: color 200ms ease;
-    color: rgb(var(--text-800));
+    color: #8c8c8c;
   }
   .outlined.focused .field-icon {
-    color: rgb(var(--text-900));
+    color: #eeeeee;
   }
   .disabled > .field-icon {
-    color: rgb(var(--text-800));
+    color: #8c8c8c;
   }
 
   .field-inner {
@@ -172,22 +172,22 @@
     top: 0;
     left: 0;
     transition: all 200ms ease;
-    color: rgb(var(--text-900));
+    color: #eeeeee;
     user-select: none;
   }
   .outlined .field-label {
     top: -0.75rem;
-    background-color: rgb(var(--background-200));
+    background-color: #212121;
     padding: 0 0.25rem;
   }
   .outlined.background .field-label {
-    background-color: rgb(var(--background-950));
+    background-color: #171717;
   }
   .full-label .field-label.browser {
     font-size: 1.2rem;
     top: 50%;
     transform: translateY(-50%);
-    color: rgb(var(--text-800));
+    color: #8c8c8c;
   }
   .field-label.hideLabel, .full-label .field-label.hideLabel {
     font-size: 0;
@@ -196,7 +196,7 @@
   .field-input {
     background-color: transparent;
     border: none;
-    color: rgb(var(--text-900));
+    color: #eeeeee;
     outline: none;
     font-size: 1.2rem;
     flex-grow: 1;
@@ -214,8 +214,8 @@
     height: 100%;
   }
   .disabled .field-input {
-    color: rgb(var(--text-800));
-    background-color: rgb(var(--background-200));
+    color: #8c8c8c;
+    background-color: #212121;
   }
   .field-input:focus {
     /* to silence the a11y inspector */
@@ -257,13 +257,13 @@
     font-size: 1rem;
     opacity: 0;
     transition: opacity 200ms ease;
-    color: rgb(var(--text-800));
+    color: #8c8c8c;
   }
   .field-hint.visible {
     opacity: 0.75;
   }
   .field-hint.error.visible {
-    color: rgb(var(--accent-800));
+    color: #f87171;
     opacity: 1;
   }
 

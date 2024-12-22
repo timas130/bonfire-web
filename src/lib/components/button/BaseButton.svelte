@@ -14,21 +14,30 @@
       base: "h-14 text-xl",
       icon: "size-14",
       normal: "px-6",
-    }
+    },
+    social: {
+      icon: "size-12",
+    },
   };
 
   export const buttonVariants = {
     default: {
-      base: "bg-background-200 text-text-900 hover:bg-background-300"
+      base: "bg-background-button text-text hover:bg-background-300"
     },
     text: {
-      base: "text-text-900 hover:bg-background-300/40",
+      base: "text-text hover:bg-background-300/40",
     },
     hero: {
-      base: "bg-primary-400/70 backdrop-blur text-text-900 font-medium hover:bg-primary-400",
+      base: "bg-accent/70 backdrop-blur text-text font-medium hover:bg-accent",
     },
     primary: {
-      base: "bg-primary-400/60 text-text-900 hover:bg-primary-400",
+      base: "bg-accent/60 text-text hover:bg-accent",
+    },
+    success: {
+      base: "bg-accent-success/30 text-text hover:bg-accent-success/50",
+    },
+    social: {
+      base: "bg-background-button text-text hover:bg-background-300 rounded-xl",
     },
   };
 </script>
@@ -56,12 +65,15 @@
 <svelte:element
   this={el}
   class="{buttonSizes[size].base} {buttonVariants[variant].base} rounded-full active:scale-90 disabled:opacity-70 transition inline-flex justify-center items-center relative {className}"
+  on:click
+  role="button"
+  tabindex="0"
   {...{disabled: loading || disabled}}
   {...$$restProps}
 >
   <slot />
   {#if loading}
-    <div class="flex justify-center items-center absolute inset-0 bg-background-200/30 rounded-full">
+    <div class="flex justify-center items-center absolute inset-0 bg-background-button/30 rounded-full">
       <Spinner class="size-6" />
     </div>
   {/if}

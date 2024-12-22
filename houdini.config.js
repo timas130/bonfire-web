@@ -3,14 +3,19 @@
 /** @type {import('houdini').ConfigFile} */
 const config = {
     "watchSchema": {
-        "url": "https://api.bonfire.moe/"
+        "url": "http://localhost:8000/"
     },
     "plugins": {
-        "houdini-svelte": {}
+        "houdini-svelte": {
+            client: "./src/client",
+        },
     },
     "scalars": {
         "Ok": {
             "type": "\"ok\"",
+        },
+        "JSONObject": {
+            "type": "{ [key: string]: any }",
         },
     },
 }

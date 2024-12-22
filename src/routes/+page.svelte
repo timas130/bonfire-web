@@ -13,7 +13,7 @@
 <div class="relative w-full">
   <HeroBackground />
   <Container class="px-0">
-    <div class="relative z-10 max-w-4xl pt-20 pb-48 px-4 text-text-950">
+    <div class="relative z-10 max-w-4xl pt-20 pb-48 px-4 text-text">
       <h1 class="text-6xl font-bold pt-40 pb-8">Bonfire &mdash; соединяем увлечения!</h1>
       <p class="text-3xl font-medium pb-10">
         Bonfire &mdash; платформа для увлечённых сообществ по играм, книгам, фильмам и многому другому.

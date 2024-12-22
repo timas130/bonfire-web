@@ -19,7 +19,7 @@
   description="Помогите нам решить ваши проблемы с Bonfire!"
 />
 
-<div class="mx-auto px-4 pt-24 pb-36 text-text-950 prose prose-bonfire lg:prose-xl">
+<div class="mx-auto px-4 pt-24 pb-36 text-text prose prose-bonfire lg:prose-xl">
   <h1>Помощь с Bonfire</h1>
   <p>
     Пожалуйста, заполните небольшую форму, чтобы вас направило куда надо.
@@ -143,11 +143,6 @@
       <li>Discord: @sitsh</li>
     </ul>
   {:else if requestType === "sit"}
-    <p>Problem?</p>
-
-    <img src="https://media1.tenor.com/m/O2uhj3kkhq0AAAAC/troll.gif" alt="">
-    <small>
-      <a href="https://tenor.com/view/troll-gif-20307589">Troll GIF</a> from <a href="https://tenor.com">Tenor</a>
-    </small>
+    <p>Ничем не могу помочь</p>
   {/if}
 </div>

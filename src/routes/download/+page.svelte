@@ -11,7 +11,7 @@
 
 <div class="relative w-full">
   <HeroBackground />
-  <div class="relative z-10 max-w-5xl w-full pt-20 pb-36 px-4 mx-auto text-text-950">
+  <div class="relative z-10 max-w-5xl w-full pt-20 pb-36 px-4 mx-auto text-text">
     <h1 class="text-4xl sm:text-5xl lg:text-8xl font-bold pt-40 pb-8">Присоединяйся!</h1>
     <p class="text-3xl font-medium pb-10">
       Откройте для себя мир общения, идей и вдохновения. Загрузите Bonfire сейчас!

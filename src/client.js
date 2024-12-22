@@ -1,15 +1,15 @@
-import { HoudiniClient } from '$houdini';
+import {HoudiniClient} from "$houdini";
+import {env as envPublic} from "$env/dynamic/public";
+
+const url = envPublic.PUBLIC_GQL_URL || "http://127.0.0.1:8000/";
 
 export default new HoudiniClient({
-    url: 'https://api.bonfire.moe/'
-
-    // uncomment this to configure the network call (for things like authentication)
-    // for more information, please visit here: https://www.houdinigraphql.com/guides/authentication
-    // fetchParams({ session }) {
-    //     return {
-    //         headers: {
-    //             Authentication: `Bearer ${session.token}`,
-    //         }
-    //     }
-    // }
-})
+    url: url,
+    fetchParams({ session }) {
+        return {
+            headers: {
+                Authorization: session?.accessToken ? `Bearer ${session.accessToken}` : "",
+            },
+        };
+    },
+});

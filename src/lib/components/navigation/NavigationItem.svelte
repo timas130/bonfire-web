@@ -16,8 +16,8 @@
   {href}
   class="
     h-10 rounded-full px-4 text-lg flex items-center
-    text-text-900 transition active:scale-90
-    {realActive ? 'bg-background-300 hover:bg-background-400' : 'hover:bg-background-300'}
+    text-text transition active:scale-90
+    {realActive ? 'bg-background-surface-lighter/70 hover:bg-background-surface-lighter' : 'hover:bg-background-surface-lighter'}
   "
   on:click
 >

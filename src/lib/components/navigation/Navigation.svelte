@@ -1,10 +1,8 @@
 <script>
   import CircleLogo from "$lib/components/logo/CircleLogo.svelte";
-  import {LogInIcon} from "lucide-svelte";
   import NavigationBar from "$lib/components/navigation/NavigationBar.svelte";
   import NavigationItem from "$lib/components/navigation/NavigationItem.svelte";
   import {page} from "$app/stores";
-  import Button from "$lib/components/button/Button.svelte";
   import Container from "$lib/components/Container.svelte";
 </script>
 

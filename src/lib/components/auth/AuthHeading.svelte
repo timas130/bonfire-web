@@ -1,3 +1,3 @@
-<h1 class="text-text-900 font-bold text-xl sm:text-3xl py-4">
+<h1 class="text-text font-bold text-xl sm:text-2xl py-2 text-center">
   <slot />
 </h1>

@@ -26,7 +26,7 @@
   }
 </script>
 
-<div class="min-h-full {theme} bg-background-50">
+<div class="min-h-full {theme} bg-background-page">
   <Navigation />
   <slot />
   <Footer />
