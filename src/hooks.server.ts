@@ -1,6 +1,7 @@
 import {graphql, setSession} from "$houdini";
 import type {Handle, HandleFetch} from "@sveltejs/kit";
 import {env as envPublic} from "$env/dynamic/public";
+import {env as envPrivate} from "$env/dynamic/private";
 import {getTokenExpiry, isAccessTokenExpiring} from "$lib/accessToken";
 
 export const handle: Handle = async ({ event, resolve }) => {
@@ -61,7 +62,7 @@ export const handleFetch: HandleFetch = ({ request, fetch, event }) => {
     request = new Request(
       request.url.replace(
         gqlUrl,
-        process.env.PRIVATE_GQL_URL || "http://127.0.0.1:8000/",
+        envPrivate.PRIVATE_GQL_URL || "http://127.0.0.1:8000/",
       ),
       request,
     );
